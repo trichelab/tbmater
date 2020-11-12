@@ -1,0 +1,32 @@
+Package: tbmater
+Type: Package
+Title: a wrapper package for the Zhou lab's tbmate tool
+Description: Tabix is great, but is somewhat wasteful when all files are on the
+             same discrete coordinate system.  tbmate (Tabix mate) addresses
+             this issue by decoupling coordinates from data.
+Version: 0.11.10
+Date: 2020-11-10
+Authors@R: person("Tim", "Triche, Jr.", role=c("aut", "cre"), email="trichelab@gmail.com")
+Author: Tim Triche, Jr. [aut, cre]
+Maintainer: Tim Triche, Jr. <trichelab@gmail.com>
+URL: https://github.com/trichelab/tbmater
+BugReports: https://github.com/trichelab/tbmater/issues
+License: MIT + file LICENSE
+Depends:
+    R (>= 3.0.0),
+Imports:
+    BiocParallel,
+    Rsamtools,
+    dplyr,
+    tibble,
+    tools,
+    GenomicRanges,
+    IRanges
+Suggests:
+    covr,
+    h5testR,
+    testthat
+RoxygenNote: 7.1.1
+Roxygen: list(markdown = TRUE)
+Encoding: UTF-8 
+
